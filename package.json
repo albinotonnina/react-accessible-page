@@ -24,5 +24,13 @@
     "start": "neutrino start --presets neutrino-preset-react",
     "build": "neutrino build --presets neutrino-preset-react",
     "test": "neutrino test --presets neutrino-preset-react neutrino-preset-jest --watch"
+  },
+  "config": {
+    "presets": [
+      "neutrino-preset-react",
+      "neutrino-preset-jest",
+      "neutrino-custom.js"
+    ]
   }
 }
+
