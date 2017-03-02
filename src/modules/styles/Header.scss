@@ -12,14 +12,8 @@ $header-height-small: 320px;
   flex-direction: column;
   min-height: $header-height;
 
-  background: url('../../assets/bg.png') no-repeat center bottom scroll;
+  background: url('../../assets/bg.jpg') no-repeat center top scroll;
   background-size: cover;
-
-  @include breakpoint-small {
-    background: url('../../assets/bg-small.png') no-repeat center top scroll;
-    height: $header-height-small;
-    background-size: cover;
-  }
 }
 
 .head_top {
