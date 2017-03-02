@@ -6,16 +6,34 @@ export default function () {
             <h1>Restaurants available in [ZONE]</h1>
          <ol>
              <li>
-                 <div>Papadopulous</div>
-                 <div>Greek</div>
-                 <div>$$</div>
-                 <div>30 minutes</div>
+                 <h3>Papadopulous</h3>
+
+                <dl>
+                    <dt>Cuisine</dt>
+                    <dt>Greek</dt>
+
+                    <dt>Price range</dt>
+                    <dt>££</dt>
+
+                    <dt>Delivery time</dt>
+                    <dt>30 minutes</dt>
+                </dl>
              </li>
              <li>
-                 <div>Tapas</div>
-                 <div>Spanish</div>
-                 <div>$$</div>
-                 <div>30 minutes</div>
+                 <div>Tapas Bravas</div>
+
+                 <dl>
+                     <dt>Cuisine</dt>
+                     <dt>Spanish</dt>
+
+                     <dt>Price range</dt>
+                     <dt>£££</dt>
+
+                     <dt>Delivery time</dt>
+                     <dt>15 minutes</dt>
+                 </dl>
+
+
              </li>
          </ol>
         </section>
