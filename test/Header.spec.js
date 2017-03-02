@@ -1,15 +1,15 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Header from '../src/modules/Header';
+import NavComponent from '../src/modules/Nav';
 
 describe('Header', () => {
 
     it("should contain nav", function() {
         const wrapper = shallow(<Header />);
-        const nav = wrapper.find('nav');
+        const navComponent = wrapper.find(NavComponent);
 
-        expect(nav.length).toBe(1);
-        expect(nav.text()).toEqual('this is a nav');
+        expect(navComponent.length).toBe(1);
     });
 
 });
