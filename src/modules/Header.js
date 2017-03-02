@@ -7,10 +7,10 @@ export default (props) => (
         <a href="#main" className={styles.skipLink}>Skip to main content</a>
 
         <div className={styles.head_top}>
-
-            <img src="./assets/logo.png" alt="Deliveroo logo" className={styles.logo}/>
-            <img src="./assets/logo-small.png" alt="Deliveroo logo" className={styles.logoSmall}/>
-
+            <a href="/" title="Go to Homepage">
+                <img src="./assets/logo.png" alt="Deliveroo logo" className={styles.logo}/>
+                <img src="./assets/logo-small.png" alt="Deliveroo logo" className={styles.logoSmall}/>
+            </a>
             <div className={styles.navWrapper}>
                 <NavComponent />
             </div>
