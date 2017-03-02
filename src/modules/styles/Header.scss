@@ -57,19 +57,21 @@ $header-height-small: 320px;
 
 .zone {
   display: block;
-  font-size: x-large;
+  font-size: 1.8rem;
   opacity: 1;
-  margin-top: $base-unit * 2
+  margin-top: $base-unit * 3
 }
 
 .paragraph {
-  max-width: 30%;
+  max-width: 30rem;
   line-height: 2em;
-  font-size: small;
+  font-size: 0.9rem;
+  text-align: center;
 
   @include breakpoint-small {
     max-width: 80%;
   }
+
 }
 
 .logoWrapper {
