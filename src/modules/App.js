@@ -1,10 +1,14 @@
 import React from 'react';
-import Header from './Header';
+import HeaderComponent from './Header';
+import RestaurantList from './RestaurantList';
 
 export default function(){
     return (
         <div>
-            <Header />
+            <HeaderComponent />
+            <main id="main">
+                <RestaurantList />
+            </main>
         </div>
     )
 }
