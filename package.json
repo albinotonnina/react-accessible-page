@@ -1,0 +1,21 @@
+{
+  "name": "deliveroo_test",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Albino Tonnina",
+  "license": "ISC",
+  "devDependencies": {
+    "neutrino": "^4.3.0",
+    "neutrino-preset-node": "^4.2.2",
+    "neutrino-preset-react": "^4.2.3"
+  },
+  "dependencies": {
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  },
+  "scripts": {
+    "start": "neutrino start --presets neutrino-preset-react",
+    "build": "neutrino build --presets neutrino-preset-react"
+  }
+}
