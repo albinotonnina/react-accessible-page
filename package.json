@@ -6,10 +6,13 @@
   "author": "Albino Tonnina",
   "license": "ISC",
   "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.6.1",
     "classnames": "^2.2.5",
     "enzyme": "^2.7.1",
+    "ignore-styles": "^5.0.1",
     "neutrino": "^4.3.0",
-    "neutrino-preset-jest": "^4.3.0",
+    "neutrino-preset-mocha": "^4.2.0",
     "neutrino-preset-node": "^4.2.2",
     "neutrino-preset-react": "^4.2.3",
     "node-sass": "^4.5.0",
@@ -24,12 +27,13 @@
   "scripts": {
     "start": "neutrino start --presets neutrino-preset-react",
     "build": "neutrino build --presets neutrino-preset-react",
-    "test": "neutrino test --presets neutrino-preset-react neutrino-preset-jest --watch"
+    "test": "neutrino test --presets neutrino-preset-react neutrino-preset-mocha -- --require ignore-styles"
+
   },
   "config": {
     "presets": [
       "neutrino-preset-react",
-      "neutrino-preset-jest",
+      "neutrino-preset-mocha",
       "neutrino-custom.js"
     ]
   }

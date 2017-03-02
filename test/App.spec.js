@@ -1,12 +1,22 @@
 import React from 'react';
+
 import { shallow } from 'enzyme';
 import App from '../src/modules/App';
-import Header from '../src/modules/Header';
+import HeaderComponent from '../src/modules/Header';
+import {expect} from 'chai';
+// import chaiEnzyme from 'chai-enzyme';
+
+// const expect = chai.expect;
+
+//chai.use(chaiEnzyme());
 
 describe('App', () => {
 
-    it("contains spec with an expectation", function() {
-        expect(shallow(<App />).contains(<Header/>)).toEqual(true);
+    it("should contain header", function() {
+        const wrapper = shallow(<App />);
+        const headerComponent = wrapper.find(HeaderComponent);
+
+        expect(headerComponent.length).to.be.equal(1);
     });
 
 });
