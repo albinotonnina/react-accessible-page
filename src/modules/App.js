@@ -2,7 +2,7 @@ import React from 'react';
 import HeaderComponent from './Header';
 import RestaurantList from './RestaurantList';
 
-import styles from './App.scss';
+import styles from './styles/App.scss';
 
 export default function(){
 
