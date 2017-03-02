@@ -6,9 +6,12 @@
   "author": "Albino Tonnina",
   "license": "ISC",
   "devDependencies": {
+    "enzyme": "^2.7.1",
     "neutrino": "^4.3.0",
+    "neutrino-preset-jest": "^4.3.0",
     "neutrino-preset-node": "^4.2.2",
-    "neutrino-preset-react": "^4.2.3"
+    "neutrino-preset-react": "^4.2.3",
+    "react-addons-test-utils": "^15.4.2"
   },
   "dependencies": {
     "react": "^15.4.2",
@@ -16,6 +19,7 @@
   },
   "scripts": {
     "start": "neutrino start --presets neutrino-preset-react",
-    "build": "neutrino build --presets neutrino-preset-react"
+    "build": "neutrino build --presets neutrino-preset-react",
+    "test": "neutrino test --presets neutrino-preset-react neutrino-preset-jest --watch"
   }
 }
