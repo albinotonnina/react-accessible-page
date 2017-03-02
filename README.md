@@ -33,6 +33,7 @@ Test
 - add eslint
 - add more unit tests
 - optimize with WebPageTest or similar
+- add flex polyfills for old IE version
 
 ## Styling
 
