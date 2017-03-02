@@ -1,21 +1,27 @@
 import React from 'react';
 import NavComponent from './Nav';
 
+import styles from './styles/Header.scss';
+
 export default function () {
     return (
-        <header>
-            <a href="#main">Skip to main content</a>
+        <header className={styles.header}>
+            <a href="#main" className={styles.skipLink}>Skip to main content</a>
 
-            <figure>
-                <img src="./assets/logo.png" alt="Deliveroo logo"/>
-                <figcaption>Deliveroo</figcaption>
-            </figure>
+            <div className={styles.head_top}>
 
-            <NavComponent />
+                <img src="./assets/logo.png" alt="Deliveroo logo" className={styles.logo} />
+                <img src="./assets/logo-small.png" alt="Deliveroo logo" className={styles.logoSmall} />
 
-            <section>
-                <h1>[34] Restaurants delivering to [ZONE]</h1>
-                <p>[Zone-information]</p>
+                <div className={styles.navWrapper}>
+                    <NavComponent />
+                </div>
+
+            </div>
+
+            <section className={styles.head_bottom}>
+                <h1 className={styles.title}> <span className={styles.delivering}>[34] Restaurants delivering to</span><span className={styles.zone}>[ZONE]</span></h1>
+                <p className={styles.paragraph}>[Zone-information]</p>
             </section>
 
 

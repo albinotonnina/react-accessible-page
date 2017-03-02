@@ -3,7 +3,14 @@
 @include font-face(proxima-nova, "./fonts/proxima-nova", 400, normal, ttf);
 @include font-face(proxima-nova, "./fonts/proxima-nova-semibold", 700, bold, ttf);
 
+html, body{
+  margin:0;
+}
 
-.container{
+body {
   font-family: proxima-nova, arial, sans-serif;
+}
+
+.container {
+
 }

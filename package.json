@@ -6,6 +6,7 @@
   "author": "Albino Tonnina",
   "license": "ISC",
   "devDependencies": {
+    "classnames": "^2.2.5",
     "enzyme": "^2.7.1",
     "neutrino": "^4.3.0",
     "neutrino-preset-jest": "^4.3.0",
@@ -33,4 +34,3 @@
     ]
   }
 }
-
