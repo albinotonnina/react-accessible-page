@@ -31,6 +31,9 @@
 
   },
   "config": {
+    "html": {
+      "title": "Search results page"
+    },
     "presets": [
       "neutrino-preset-react",
       "neutrino-preset-mocha",
