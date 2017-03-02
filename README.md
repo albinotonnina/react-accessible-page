@@ -34,6 +34,13 @@ Test
 - add more unit tests
 - optimize with WebPageTest or similar
 - add flex polyfills for old IE version
+- svg logo?
+- burger icon svg?
+
+
+## Accessibility
+
+Reference: [Inclusive design patterns](https://www.smashingmagazine.com/inclusive-design-patterns/)
 
 ## Styling
 
