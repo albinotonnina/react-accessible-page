@@ -7,7 +7,8 @@ export default function () {
             <a href="#main">Skip to main content</a>
 
             <figure>
-                <img src="/assets/logo.png" alt="Deliveroo logo"/>
+                <img src="./assets/logo.png" alt="Deliveroo logo"/>
+                <figcaption>Deliveroo</figcaption>
             </figure>
 
             <NavComponent />
