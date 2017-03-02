@@ -1,39 +1,48 @@
 import React from 'react';
+import styles from './styles/RestaurantList.scss'
 
 export default function () {
     return (
-        <section tabIndex="1">
-            <h1>Restaurants available in [ZONE]</h1>
-         <ol>
-             <li>
-                 <h3>Papadopulous</h3>
+        <section  className={styles.container} tabIndex="1">
+            <h1 className={styles.title}>Restaurants available in [ZONE]</h1>
 
-                <dl>
-                    <dt>Cuisine</dt>
-                    <dt>Greek</dt>
+         <ol className={styles.ol}>
+             <li className={styles.item}>
+                 <h2 className={styles.item_title}>Papadopulous</h2>
 
-                    <dt>Price range</dt>
-                    <dt>££</dt>
+                <dl className={styles.dl}>
+                    <dt className={styles.dt}>Cuisine</dt>
+                    <dd className={styles.dd}>Greek</dd>
 
-                    <dt>Delivery time</dt>
-                    <dt>30 minutes</dt>
+                    <dt className={styles.dt}>Price range</dt>
+                    <dd className={`${styles.dd} ${styles.dtPrice}`}>££</dd>
+
+                    <dt className={styles.dt}>Delivery time</dt>
+                    <dd className={styles.dd}>30 minutes</dd>
                 </dl>
+
+                 <div>
+                     <button className={styles.caret} />
+                 </div>
              </li>
-             <li>
-                 <div>Tapas Bravas</div>
 
-                 <dl>
-                     <dt>Cuisine</dt>
-                     <dt>Spanish</dt>
+             <li className={styles.item}>
+                 <h2 className={styles.item_title}>Tapas Bravas</h2>
 
-                     <dt>Price range</dt>
-                     <dt>£££</dt>
+                 <dl className={styles.dl}>
+                     <dt className={styles.dt}>Cuisine</dt>
+                     <dd className={styles.dd}>Spanish</dd>
 
-                     <dt>Delivery time</dt>
-                     <dt>15 minutes</dt>
+                     <dt className={styles.dt}>Price range</dt>
+                     <dd className={`${styles.dd} ${styles.dtPrice}`}>£££</dd>
+
+                     <dt className={styles.dt}>Delivery time</dt>
+                     <dd className={styles.dd}>15 minutes</dd>
                  </dl>
 
-
+                 <div>
+                     <button className={styles.caret} />
+                 </div>
              </li>
          </ol>
         </section>
