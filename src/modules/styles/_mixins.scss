@@ -1,3 +1,5 @@
+@import "variables";
+
 // =============================================================================
 // String Replace
 // =============================================================================
@@ -40,5 +42,49 @@
     font-style: $style;
     font-weight: $weight;
     src: $src;
+  }
+}
+
+
+// =============================================================================
+// Hide content (not from screen readers)
+// =============================================================================
+
+@mixin visually-hidden(){
+   /*https://developer.yahoo.com/blogs/ydn/clip-hidden-content-better-accessibility-53456.html*/
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+    padding:0 !important;
+    border:0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+
+}
+
+
+
+// =============================================================================
+// RWD mixins
+// =============================================================================
+
+
+
+@mixin breakpoint-small() {
+  @media only screen and (min-width: $breaskpoint-small) and (max-width: $breaskpoint-medium) {
+    @content;
+  }
+}
+
+@mixin breakpoint-medium() {
+  @media only screen and (min-width: $breaskpoint-medium) and (max-width: $breaskpoint-large) {
+    @content;
+  }
+}
+
+@mixin breakpoint-large() {
+  @media only screen and (min-width: $breaskpoint-large) {
+    @content;
   }
 }
