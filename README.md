@@ -1,8 +1,3 @@
-# Developer test
-
-## Requirements
-I've shared a folder with the assets for a new page on the site that we would like you to mark up and style. It's pretty simple but what we're looking for is attention to detail. [...]
-
 ## Instructions
 Install
 
