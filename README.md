@@ -1,4 +1,6 @@
 ## Instructions
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/albinotonnina/react-accessible-page.svg)](https://greenkeeper.io/)
 Install
 
 `npm install`
